@@ -40,7 +40,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
 
 
     try {
-      response.setContentType("text/html; charset=UTF-8");
+      response.setContentType("text/html; charset=utf-8");
       pageContext = _jspxFactory.getPageContext(this, request, response,
       			null, true, 8192, true);
       _jspx_page_context = pageContext;
@@ -56,10 +56,10 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("  \r\n");
       out.write("<html>  \r\n");
       out.write("<head>  \r\n");
-      out.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">  \r\n");
+      out.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">  \r\n");
       out.write("<title>点击进入界面</title>  \r\n");
       out.write("</head>  \r\n");
-      out.write("<body>  \r\n");
+      out.write("<body bgcolor=\"#E6E6FA\">  \r\n");
       out.write("<h2>你好，请点击进入!</h2>  \r\n");
       out.write("  \r\n");
       out.write("\t<a href=\"login.jsp\">点击进入</a>\r\n");

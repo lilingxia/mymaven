@@ -40,7 +40,7 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
 
 
     try {
-      response.setContentType("text/html; charset=UTF-8");
+      response.setContentType("text/html; charset=utf-8");
       pageContext = _jspxFactory.getPageContext(this, request, response,
       			null, true, 8192, true);
       _jspx_page_context = pageContext;
@@ -56,17 +56,17 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\r\n");
       out.write("<html>\r\n");
       out.write("<head>\r\n");
-      out.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
+      out.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\r\n");
       out.write("<title>Insert title here</title>\r\n");
       out.write("</head>\r\n");
-      out.write("<body>\r\n");
+      out.write("<body bgcolor=\"#E6E6FA\" >\r\n");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${error }", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
       out.write("\r\n");
       out.write("\t<form action=\"login.do\" method=\"post\">\r\n");
-      out.write("\t\t用户登陆界面<br>\r\n");
+      out.write("\t\t<font color=\"green\">用户登陆界面<br>\r\n");
       out.write("\t\t<hr>\t\t\r\n");
       out.write("\t\t请输入用户名：<input type=\"text\" name=\"username\"><br>\r\n");
-      out.write("\t\t<input type=\"submit\" value=\"请点击登录\">\r\n");
+      out.write("\t\t<input type=\"submit\" value=\"请点击登录\"></font>\r\n");
       out.write("\t</form>\r\n");
       out.write("\r\n");
       out.write("</body>\r\n");

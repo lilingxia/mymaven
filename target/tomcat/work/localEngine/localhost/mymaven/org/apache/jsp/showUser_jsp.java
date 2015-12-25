@@ -48,7 +48,7 @@ public final class showUser_jsp extends org.apache.jasper.runtime.HttpJspBase
 
 
     try {
-      response.setContentType("text/html; charset=UTF-8");
+      response.setContentType("text/html; charset=gb2312");
       pageContext = _jspxFactory.getPageContext(this, request, response,
       			null, true, 8192, true);
       _jspx_page_context = pageContext;
@@ -58,32 +58,31 @@ public final class showUser_jsp extends org.apache.jasper.runtime.HttpJspBase
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write(" \r\n");
+      out.write("  \r\n");
       out.write("\r\n");
       out.write(" <!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\r\n");
       out.write(" <html>\r\n");
       out.write(" <head>\r\n");
-      out.write(" <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
+      out.write(" <meta http-equiv=\"Content-Type\" content=\"text/html; charset=gb2312\">\r\n");
       out.write("<title>Insert title here</title>\r\n");
       out.write("</head>\r\n");
-      out.write("<body bgcolor=\"#467500\">\r\n");
+      out.write("<body bgcolor=\"#E6E6FA\">\r\n");
       out.write("\r\n");
       out.write(" ");
       out.write("\r\n");
       out.write("      ");
  count++; 
       out.write("\r\n");
-      out.write("\t<font>你好，");
+      out.write("\t<font color=\"green\"> 你好，");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${user.username }", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-      out.write("，你是是第");
+      out.write("，<font size=4>你是是第");
       out.print( count );
-      out.write("位访问者；<br>\r\n");
-      out.write("\t</td>您的访问时间是：<td>");
+      out.write("位访问者；</font><font size=3>您的访问时间是：");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${user.time }", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-      out.write("；</td>\r\n");
-      out.write("\t<br>在您前面的访问者是:\r\n");
-      out.write("\t<table width=\"90%\" border=\"1\" align=\"center\">\r\n");
-      out.write("<th>姓名</th><th>时间</th>\r\n");
+      out.write("!</font> <br>\r\n");
+      out.write("\t<br><td> 在您前面的访问者是:</td></br>\r\n");
+      out.write("\t<table width=\"60%\" border=\"1\" align=\"left\">\r\n");
+      out.write("<th>姓名信息</th><th>时间信息</th>\r\n");
       if (_jspx_meth_c_005fforEach_005f0(_jspx_page_context))
         return;
       out.write("\r\n");
@@ -110,9 +109,9 @@ public final class showUser_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_005fforEach_005f0 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
     _jspx_th_c_005fforEach_005f0.setPageContext(_jspx_page_context);
     _jspx_th_c_005fforEach_005f0.setParent(null);
-    // /showUser.jsp(19,0) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fforEach_005f0.setItems(new org.apache.jasper.el.JspValueExpression("/showUser.jsp(19,0) '${model}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${model}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
-    // /showUser.jsp(19,0) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /showUser.jsp(18,0) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
+    _jspx_th_c_005fforEach_005f0.setItems(new org.apache.jasper.el.JspValueExpression("/showUser.jsp(18,0) '${map}'",_el_expressionfactory.createValueExpression(_jspx_page_context.getELContext(),"${map}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    // /showUser.jsp(18,0) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fforEach_005f0.setVar("node");
     int[] _jspx_push_body_count_c_005fforEach_005f0 = new int[] { 0 };
     try {
@@ -155,7 +154,7 @@ public final class showUser_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.OutTag _jspx_th_c_005fout_005f0 = (org.apache.taglibs.standard.tag.rt.core.OutTag) _005fjspx_005ftagPool_005fc_005fout_0026_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.OutTag.class);
     _jspx_th_c_005fout_005f0.setPageContext(_jspx_page_context);
     _jspx_th_c_005fout_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fforEach_005f0);
-    // /showUser.jsp(20,8) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /showUser.jsp(19,8) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fout_005f0.setValue((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${node.key}", java.lang.Object.class, (PageContext)_jspx_page_context, null, false));
     int _jspx_eval_c_005fout_005f0 = _jspx_th_c_005fout_005f0.doStartTag();
     if (_jspx_th_c_005fout_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -174,7 +173,7 @@ public final class showUser_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.OutTag _jspx_th_c_005fout_005f1 = (org.apache.taglibs.standard.tag.rt.core.OutTag) _005fjspx_005ftagPool_005fc_005fout_0026_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.OutTag.class);
     _jspx_th_c_005fout_005f1.setPageContext(_jspx_page_context);
     _jspx_th_c_005fout_005f1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fforEach_005f0);
-    // /showUser.jsp(21,5) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /showUser.jsp(20,5) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fout_005f1.setValue((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${node.value}", java.lang.Object.class, (PageContext)_jspx_page_context, null, false));
     int _jspx_eval_c_005fout_005f1 = _jspx_th_c_005fout_005f1.doStartTag();
     if (_jspx_th_c_005fout_005f1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {

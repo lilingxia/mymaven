@@ -1,17 +1,25 @@
-<%@ page language="java" contentType="text/html; charset=GB18030"
-     pageEncoding="GB18030"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>  
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+     pageEncoding="UTF-8"%>
  <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
  <html>
  <head>
- <meta http-equiv="Content-Type" content="text/html; charset=GB18030">
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 </head>
-<body>
+<body bgcolor="#467500">
+
  <%! int count = 0; %>
       <% count++; %>
-	<font>ÄãºÃ£¬${user.username }£¬ÄúÊÇÊÇµÚ<%= count %>Î»·ÃÎÊÕß£»<br>
-	</td>ÄúµÄ·ÃÎÊÊ±¼äÊÇ£º<td>${user.time }£»</td>
-	<br>ÔÚÄúÇ°ÃæµÄ·ÃÎÊÕßÊÇ:
-	<br>ĞÕÃû  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  ·ÃÎÊÊ±¼ä</font><br>
+	<font> ä½ å¥½ï¼Œ${user.username }ï¼Œä½ æ˜¯æ˜¯ç¬¬<%= count %>ä½è®¿é—®è€…ï¼›</font> <br>
+	<td> æ‚¨çš„è®¿é—®æ—¶é—´æ˜¯ï¼š${user.time }ï¼›</td>
+	<br>åœ¨æ‚¨å‰é¢çš„è®¿é—®è€…æ˜¯:
+	<table width="90%" border="1" align="center">
+<th>å§“å</th><th>æ—¶é—´</th>
+<c:forEach items="${model}" var="node">  
+<tr><td><c:out value="${node.key}"></c:out></td>  
+ <td><c:out value="${node.value}"></c:out></td></tr> 
+</c:forEach>
+</table>
 </body>
 </html>

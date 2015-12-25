@@ -1,5 +1,163 @@
-/target/
-.classpath
-.project
-.settings/
 
+Administrator@WINDOWS-0GB1I3C MINGW64 /d/Users/Administrator/workspace/mymaven (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .classpath
+        .gitignore
+        .project
+        .settings/
+        pom.xml
+        src/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Administrator@WINDOWS-0GB1I3C MINGW64 /d/Users/Administrator/workspace/mymaven (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .gitignore
+        pom.xml
+        src/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Administrator@WINDOWS-0GB1I3C MINGW64 /d/Users/Administrator/workspace/mymaven (master)
+$ git add ./
+warning: LF will be replaced by CRLF in .gitignore.
+The file will have its original line endings in your working directory.
+g
+Administrator@WINDOWS-0GB1I3C MINGW64 /d/Users/Administrator/workspace/mymaven (master)
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   .gitignore
+        new file:   pom.xml
+        new file:   src/main/java/com/example/controller/LoginController.java
+        new file:   src/main/java/com/example/entity/User.java
+        new file:   src/main/webapp/WEB-INF/applicationContext.xml
+        new file:   src/main/webapp/WEB-INF/web.xml
+        new file:   src/main/webapp/index.jsp
+        new file:   src/main/webapp/login.jsp
+        new file:   src/main/webapp/showUser.jsp
+
+
+Administrator@WINDOWS-0GB1I3C MINGW64 /d/Users/Administrator/workspace/mymaven (master)
+$ git commit -m "first commit"
+[master (root-commit) 3a01436] first commit
+warning: LF will be replaced by CRLF in .gitignore.
+The file will have its original line endings in your working directory.
+ 9 files changed, 435 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 pom.xml
+ create mode 100644 src/main/java/com/example/controller/LoginController.java
+ create mode 100644 src/main/java/com/example/entity/User.java
+ create mode 100644 src/main/webapp/WEB-INF/applicationContext.xml
+ create mode 100644 src/main/webapp/WEB-INF/web.xml
+ create mode 100644 src/main/webapp/index.jsp
+ create mode 100644 src/main/webapp/login.jsp
+ create mode 100644 src/main/webapp/showUser.jsp
+
+Administrator@WINDOWS-0GB1I3C MINGW64 /d/Users/Administrator/workspace/mymaven (master)
+$ git remote -v
+
+Administrator@WINDOWS-0GB1I3C MINGW64 /d/Users/Administrator/workspace/mymaven (master)
+$ ssh -T git@github.com
+Permission denied (publickey).
+
+Administrator@WINDOWS-0GB1I3C MINGW64 /d/Users/Administrator/workspace/mymaven (master)
+$ ssh-key
+ssh-keygen.exe   ssh-keyscan.exe
+
+Administrator@WINDOWS-0GB1I3C MINGW64 /d/Users/Administrator/workspace/mymaven (master)
+$ ssh-keygen -t rsa -C "943517647@qq.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/Administrator/.ssh/id_rsa):
+/c/Users/Administrator/.ssh/id_rsa already exists.
+Overwrite (y/n)? y
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/Administrator/.ssh/id_rsa.
+Your public key has been saved in /c/Users/Administrator/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:VfzPKlEBRg3oTFtZl5WSsCBgVvS263zZb6J+AfawNl8 943517647@qq.com
+The key's randomart image is:
++---[RSA 2048]----+
+|     +++ . =B*o *|
+|    o   o +o=oo+ |
+|         *.+ ... |
+|        ..=+  o  |
+|        S.. =. o |
+|          .+.o Eo|
+|         .. =.o. |
+|        o  o.=.. |
+|         oooo.+. |
++----[SHA256]-----+
+
+Administrator@WINDOWS-0GB1I3C MINGW64 /d/Users/Administrator/workspace/mymaven (master)
+$ cd ~/.ssh
+
+Administrator@WINDOWS-0GB1I3C MINGW64 ~/.ssh
+$ ls
+id_rsa  id_rsa.pub  known_hosts
+
+Administrator@WINDOWS-0GB1I3C MINGW64 ~/.ssh
+$ cat id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDawJptthx+FzDFhvVGz97Wmwz2czauZodnQJMJzYFDEj1ok4cvHDhuUUGH1q7y+tMGl81fWw2HGMfesf5Av+RU+Zj0yla4TsubBzS2GoYzopXxuzMVJ8TH0ktT8SwDsYb1u4DaeDynMrmGJo8Z4AvTIOt90XCqG2IPi+kQEgZ7j2LNMS/P99zlSjWLwEItfNcCgJK1Ws9cOUbPGT0MIm0xqqqVWTivB3l0UMubNVSUq8TfruuK/i/CuU8MOmFBNuJXYrJK8/pQ0kWZHmjN+oIk2hK6k5cRi2hHgzwCnTVQRAKksCyoTw0sW8LbCWMCw70PqfROzoTLm68PlvGOgQ7/ 943517647@qq.com
+
+Administrator@WINDOWS-0GB1I3C MINGW64 ~/.ssh
+$ ^C
+
+Administrator@WINDOWS-0GB1I3C MINGW64 ~/.ssh
+$ ssh -T git@github.com
+Hi lilingxia! You've successfully authenticated, but GitHub does not provide shell access.
+
+Administrator@WINDOWS-0GB1I3C MINGW64 ~/.ssh
+$ git remote add origin git@github.com:lilingxia/mymaven.git
+fatal: Not a git repository (or any of the parent directories): .git
+
+Administrator@WINDOWS-0GB1I3C MINGW64 ~/.ssh
+$ cd /d/Users/Administrator/workspace/my
+my/          mymaven/     mymaven.rar
+
+Administrator@WINDOWS-0GB1I3C MINGW64 ~/.ssh
+$ cd /d/Users/Administrator/workspace/my
+my/          mymaven/     mymaven.rar
+
+Administrator@WINDOWS-0GB1I3C MINGW64 ~/.ssh
+$ cd /d/Users/Administrator/workspace/mymaven
+
+Administrator@WINDOWS-0GB1I3C MINGW64 /d/Users/Administrator/workspace/mymaven (master)
+$ git remote add origin git@github.com:lilingxia/mymaven.git
+
+Administrator@WINDOWS-0GB1I3C MINGW64 /d/Users/Administrator/workspace/mymaven (master)
+$ git push -u origin master:master
+Counting objects: 20, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (20/20), 5.03 KiB | 0 bytes/s, done.
+Total 20 (delta 0), reused 0 (delta 0)
+To git@github.com:lilingxia/mymaven.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+
+Administrator@WINDOWS-0GB1I3C MINGW64 /d/Users/Administrator/workspace/mymaven (master)
+$ ^C
+
+Administrator@WINDOWS-0GB1I3C MINGW64 /d/Users/Administrator/workspace/mymaven (master)
+$

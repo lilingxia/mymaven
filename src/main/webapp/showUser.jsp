@@ -16,7 +16,7 @@
 	<br>在您前面的访问者是:
 	<table width="90%" border="1" align="center">
 <th>姓名</th><th>时间</th>
-<c:forEach items="${model}" var="node">  
+<c:forEach items="${map}" var="node">  
 <tr><td><c:out value="${node.key}"></c:out></td>  
  <td><c:out value="${node.value}"></c:out></td></tr> 
 </c:forEach>
